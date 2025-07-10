@@ -1,7 +1,7 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
-import { useEffect } from 'react';
+import { useActionState, useEffect } from 'react';
+import { useFormStatus } from 'react-dom';
 import { getRepoSummary, type ActionState } from './actions';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -28,7 +28,7 @@ function SubmitButton() {
 
 export default function SummarizerForm() {
   const initialState: ActionState = {};
-  const [state, dispatch] = useFormState(getRepoSummary, initialState);
+  const [state, dispatch] = useActionState(getRepoSummary, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
