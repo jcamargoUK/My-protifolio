@@ -70,15 +70,11 @@ export default function PortfolioSection() {
               </CardContent>
               <CardFooter className="p-6 pt-0">
                 <div className="flex w-full justify-start gap-4">
-                  <Link href={project.liveLink} passHref legacyBehavior>
-                    <a target="_blank" rel="noopener noreferrer">
-                      <Button>Live Demo <ArrowUpRight className="ml-2 h-4 w-4" /></Button>
-                    </a>
+                  <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                    <Button>Live Demo <ArrowUpRight className="ml-2 h-4 w-4" /></Button>
                   </Link>
-                  <Link href={project.githubLink} passHref legacyBehavior>
-                    <a target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline">GitHub</Button>
-                    </a>
+                  <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline">GitHub</Button>
                   </Link>
                 </div>
               </CardFooter>
