@@ -13,6 +13,7 @@ export function ThemeToggle() {
 
   if (!mounted) {
     // Render a placeholder or null during server-side rendering
+    // to prevent hydration mismatch.
     return <div style={{width: '106px', height: '56px'}} />;
   }
 
@@ -65,5 +66,3 @@ export function ThemeToggle() {
     </label>
   );
 }
-
-    

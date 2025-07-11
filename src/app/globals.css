@@ -69,7 +69,7 @@
     @apply bg-background text-foreground;
   }
   section {
-    @apply w-full py-20 md:py-28;
+    @apply w-full;
   }
 }
 
@@ -446,5 +446,3 @@
 .bb8:hover .bb8__head::after {
   background-position: 0 0;
 }
-
-    
