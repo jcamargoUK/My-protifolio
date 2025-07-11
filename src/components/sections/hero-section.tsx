@@ -20,7 +20,8 @@ export default function HeroSection() {
             <Link href="/#contact">
               <Button
                 size="lg"
-                className="transition-transform duration-300 hover:scale-105"
+                variant="outline"
+                className="transition-all duration-300 hover:scale-105 hover:bg-orange-accent hover:text-primary-foreground hover:border-orange-accent"
               >
                 Hire Me
               </Button>
