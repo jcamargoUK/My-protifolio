@@ -14,7 +14,7 @@ export function ThemeToggle() {
   if (!mounted) {
     // Render a placeholder or null during server-side rendering
     // to prevent hydration mismatch.
-    return <div style={{width: '106px', height: '56px'}} />;
+    return <div style={{width: '74px', height: '40px'}} />;
   }
 
   const isDarkMode = theme === "dark";
@@ -66,3 +66,4 @@ export function ThemeToggle() {
     </label>
   );
 }
+
