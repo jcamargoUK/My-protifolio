@@ -17,7 +17,7 @@ export default function HeroSection() {
             <Link href="/#contact">
               <Button 
                 size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-background hover:text-primary border-2 border-primary"
+                className="bg-primary text-primary-foreground hover:bg-background hover:text-primary border-2 border-primary transition-transform duration-200 hover:scale-105"
               >
                 Hire Me
               </Button>
@@ -26,7 +26,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="transition-all duration-200 hover:scale-105 border-2 border-orange-500 bg-orange-500 text-white hover:bg-background hover:text-orange-500 hover:border-orange-500"
+                className="transition-all duration-200 hover:scale-105 border-2 border-orange-500 text-orange-500 hover:bg-background hover:text-orange-500 hover:border-orange-500"
               >
                 View My Work
                 <ArrowDown className="ml-2 h-5 w-5" />
