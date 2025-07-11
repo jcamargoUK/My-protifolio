@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="bg-background">
+    <section id="contact" className="bg-gradient-to-b from-background to-background-alt">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Get In Touch</h2>
