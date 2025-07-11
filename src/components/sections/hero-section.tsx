@@ -15,7 +15,10 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/#contact">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Button 
+                size="lg" 
+                className="bg-primary text-primary-foreground hover:bg-background hover:text-primary border-2 border-primary"
+              >
                 Hire Me
               </Button>
             </Link>
@@ -23,7 +26,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-orange-500 text-orange-500 hover:bg-orange-500/10 hover:text-orange-500 transition-transform duration-200 hover:scale-105"
+                className="transition-transform duration-200 hover:scale-105"
               >
                 View My Work
                 <ArrowDown className="ml-2 h-5 w-5" />
