@@ -86,19 +86,10 @@ export default {
             height: '0',
           },
         },
-        glitch: {
-          '0%': { transform: 'translate(0)' },
-          '20%': { transform: 'translate(-5px, 5px)' },
-          '40%': { transform: 'translate(-5px, -5px)' },
-          '60%': { transform: 'translate(5px, 5px)' },
-          '80%': { transform: 'translate(5px, -5px)' },
-          'to': { transform: 'translate(0)' }
-        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'glitch': 'glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both'
       },
     },
   },
