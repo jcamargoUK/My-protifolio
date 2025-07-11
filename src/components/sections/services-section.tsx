@@ -33,7 +33,7 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="group text-center p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-all duration-300 bg-card text-card-foreground hover:bg-primary hover:text-primary-foreground hover:scale-105"
+              className="group text-center p-6 flex flex-col items-center shadow-lg hover:shadow-2xl transition-all duration-300 bg-card text-card-foreground hover:bg-primary hover:text-primary-foreground hover:scale-105"
             >
               <CardHeader className="items-center">
                 {service.icon}
