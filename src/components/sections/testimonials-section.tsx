@@ -28,7 +28,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section id="testimonials" className="bg-card border-y">
+    <section id="testimonials" className="bg-background-alt border-y">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">What My Clients Say</h2>

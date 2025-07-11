@@ -4,7 +4,7 @@ import { ArrowDown } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section id="home" className="bg-card border-b">
+    <section id="home" className="bg-background-alt border-b">
       <div className="container mx-auto px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="max-w-3xl">
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-4">
