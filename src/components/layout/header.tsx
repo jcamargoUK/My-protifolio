@@ -40,7 +40,7 @@ export default function Header() {
           ))}
            <div className="flex items-center gap-2">
              <Link href="/summarizer" passHref>
-                <Button variant="outline" size="sm" className="hover-orange-bg transition-all duration-300 hover:scale-105">AI Summarizer</Button>
+                <Button variant="outline" size="sm" className="transition-all duration-300 hover:scale-105 hover:bg-orange-accent hover:text-primary-foreground hover:border-orange-accent">AI Summarizer</Button>
              </Link>
              <ThemeToggle />
            </div>
@@ -73,7 +73,7 @@ export default function Header() {
               </nav>
               <div className="flex items-center justify-between">
                 <Link href="/summarizer" passHref>
-                   <Button variant="outline" onClick={closeSheet} className="hover-orange-bg">AI Summarizer</Button>
+                   <Button variant="outline" onClick={closeSheet} className="hover:bg-orange-accent hover:text-primary-foreground hover:border-orange-accent">AI Summarizer</Button>
                 </Link>
                 <ThemeToggle />
               </div>
