@@ -75,7 +75,7 @@
 
 /* BB8 Toggle */
 .bb8-toggle {
-  --toggle-size: 10px; /* control overall size */
+  --toggle-size: 8px; /* control overall size */
   --toggle-width: 10.625em;
   --toggle-height: 5.625em;
   --bb8-diameter: 4.375em;
