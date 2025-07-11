@@ -1,17 +1,41 @@
 'use client';
 
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
+
+function GlitchTitle() {
+  const [isAnimating, setIsAnimating] = useState(true);
+  const titleText = "Transforming Ideas into Digital Realities";
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsAnimating(false);
+    }, 5000); // Animate for 5 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const glitchClass = isAnimating ? 'animate-glitch-auto' : 'animate-glitch-hover';
+
+  return (
+    <h1 
+      className={`glitch font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-4 text-foreground ${glitchClass}`}
+      data-glitch={titleText}
+    >
+      {titleText}
+    </h1>
+  );
+}
+
 
 export default function HeroSection() {
   return (
     <section id="home" className="border-b bg-gradient-to-b from-background via-background-alt to-background">
       <div className="container mx-auto px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="max-w-3xl">
-          <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-4">
-            Transforming Ideas into Digital Realities
-          </h1>
+          <GlitchTitle />
           <p className="text-lg md:text-xl text-muted-foreground mb-8">
             Hi, I'm Julio Camargo. I build fast, responsive, and beautiful websites that help businesses grow.
           </p>

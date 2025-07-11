@@ -72,3 +72,36 @@
     @apply w-full py-12 md:py-24 lg:py-32;
   }
 }
+
+@layer components {
+  .glitch {
+    @apply relative;
+  }
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-glitch);
+    @apply uppercase absolute top-0 left-0 w-full h-full block opacity-80;
+  }
+  .glitch::after {
+    color: #f0f; /* Magenta */
+    z-index: -2;
+  }
+  .glitch::before {
+    color: #0ff; /* Cyan */
+    z-index: -1;
+  }
+
+  .animate-glitch-hover:hover::before {
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  }
+  .animate-glitch-hover:hover::after {
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  }
+
+  .animate-glitch-auto::before {
+     animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  }
+  .animate-glitch-auto::after {
+     animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  }
+}
