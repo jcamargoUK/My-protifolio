@@ -3,43 +3,22 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
-import React, { useState, useEffect } from 'react';
-
-function GlitchTitle({ text }: { text: string }) {
-  const [animationClass, setAnimationClass] = useState('animate-glitch-auto');
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setAnimationClass('animate-glitch-hover');
-    }, 5000); // 5 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  return (
-    <h1
-      className={`glitch font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-4 ${animationClass}`}
-      data-glitch={text}
-    >
-      {text}
-    </h1>
-  );
-}
-
 
 export default function HeroSection() {
   return (
     <section id="home" className="border-b bg-gradient-to-b from-background via-background-alt to-background">
       <div className="container mx-auto px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="max-w-3xl">
-          <GlitchTitle text="Transforming Ideas into Digital Realities" />
+          <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-4">
+            Transforming Ideas into Digital Realities
+          </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8">
             Hi, I'm Julio Camargo. I build fast, responsive, and beautiful websites that help businesses grow.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/#contact">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="transition-transform duration-200 hover:scale-105"
               >
                 Hire Me

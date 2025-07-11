@@ -86,26 +86,6 @@ export default {
             height: '0',
           },
         },
-        glitch: {
-          '0%': {
-            transform: 'translate(0)',
-          },
-          '20%': {
-            transform: 'translate(-5px, 5px)',
-          },
-          '40%': {
-            transform: 'translate(-5px, -5px)',
-          },
-          '60%': {
-            transform: 'translate(5px, 5px)',
-          },
-          '80%': {
-            transform: 'translate(5px, -5px)',
-          },
-          'to': {
-            transform: 'translate(0)',
-          },
-        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
