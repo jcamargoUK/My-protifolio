@@ -3,17 +3,17 @@ import { CodeXml, ServerCog, Rocket } from 'lucide-react';
 
 const services = [
   {
-    icon: <CodeXml className="h-10 w-10 text-primary" />,
+    icon: <CodeXml className="h-10 w-10 text-secondary group-hover:text-[#F97316] transition-colors duration-300" />,
     title: 'Front-End Development',
     description: 'Creating beautiful, responsive, and intuitive user interfaces with modern technologies like React and Next.js.'
   },
   {
-    icon: <ServerCog className="h-10 w-10 text-primary" />,
+    icon: <ServerCog className="h-10 w-10 text-secondary group-hover:text-[#F97316] transition-colors duration-300" />,
     title: 'Full-Stack Solutions',
     description: 'Building robust and scalable full-stack applications, from database design to API development and deployment.'
   },
   {
-    icon: <Rocket className="h-10 w-10 text-primary" />,
+    icon: <Rocket className="h-10 w-10 text-secondary group-hover:text-[#F97316] transition-colors duration-300" />,
     title: 'Website Optimization',
     description: 'Improving website performance, speed, and SEO to enhance user experience and drive more traffic.'
   }
@@ -31,12 +31,15 @@ export default function ServicesSection() {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="text-center p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-shadow duration-300">
+            <Card 
+              key={index} 
+              className="group text-center p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-all duration-300 bg-[#F97316] text-secondary hover:bg-card hover:text-card-foreground"
+            >
               <CardHeader className="items-center">
                 {service.icon}
                 <CardTitle className="mt-4 font-headline text-2xl">{service.title}</CardTitle>
               </CardHeader>
-              <CardDescription className="text-base">
+              <CardDescription className="text-base text-secondary/90 group-hover:text-muted-foreground transition-colors duration-300">
                 {service.description}
               </CardDescription>
             </Card>
