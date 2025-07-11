@@ -3,17 +3,17 @@ import { CodeXml, ServerCog, Rocket } from 'lucide-react';
 
 const services = [
   {
-    icon: <CodeXml className="h-10 w-10 text-primary group-hover:text-secondary transition-colors duration-300" />,
+    icon: <CodeXml className="h-10 w-10 text-primary group-hover:text-primary-foreground transition-colors duration-300" />,
     title: 'Front-End Development',
     description: 'Creating beautiful, responsive, and intuitive user interfaces with modern technologies like React and Next.js.'
   },
   {
-    icon: <ServerCog className="h-10 w-10 text-primary group-hover:text-secondary transition-colors duration-300" />,
+    icon: <ServerCog className="h-10 w-10 text-primary group-hover:text-primary-foreground transition-colors duration-300" />,
     title: 'Full-Stack Solutions',
     description: 'Building robust and scalable full-stack applications, from database design to API development and deployment.'
   },
   {
-    icon: <Rocket className="h-10 w-10 text-primary group-hover:text-secondary transition-colors duration-300" />,
+    icon: <Rocket className="h-10 w-10 text-primary group-hover:text-primary-foreground transition-colors duration-300" />,
     title: 'Website Optimization',
     description: 'Improving website performance, speed, and SEO to enhance user experience and drive more traffic.'
   }
@@ -33,13 +33,13 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="group text-center p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-all duration-300 bg-card text-card-foreground hover:bg-[#F97316] hover:text-secondary hover:scale-105"
+              className="group text-center p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-all duration-300 bg-card text-card-foreground hover:bg-primary hover:text-primary-foreground hover:scale-105"
             >
               <CardHeader className="items-center">
                 {service.icon}
                 <CardTitle className="mt-4 font-headline text-2xl">{service.title}</CardTitle>
               </CardHeader>
-              <CardDescription className="text-base text-muted-foreground group-hover:text-secondary/90 transition-colors duration-300">
+              <CardDescription className="text-base text-muted-foreground group-hover:text-primary-foreground/90 transition-colors duration-300">
                 {service.description}
               </CardDescription>
             </Card>
