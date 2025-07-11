@@ -8,7 +8,7 @@ const skills = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="bg-gradient-to-b from-background to-background-alt">
+    <section id="about" className="bg-gradient-to-b from-background to-background-alt py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-5 gap-12 items-center">
           <div className="md:col-span-2">
