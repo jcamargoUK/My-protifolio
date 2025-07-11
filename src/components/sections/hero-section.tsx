@@ -14,13 +14,17 @@ export default function HeroSection() {
             Hi, I'm Julio Camargo. I build fast, responsive, and beautiful websites that help businesses grow.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/#contact" passHref>
+            <Link href="/#contact">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 Hire Me
               </Button>
             </Link>
-            <Link href="/#portfolio" passHref>
-              <Button size="lg" variant="outline" className="text-accent-foreground border-accent hover:bg-accent/10">
+            <Link href="/#portfolio">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-orange-500 text-orange-500 hover:bg-orange-500/10 hover:text-orange-500 transition-transform duration-200 hover:scale-105"
+              >
                 View My Work
                 <ArrowDown className="ml-2 h-5 w-5" />
               </Button>
