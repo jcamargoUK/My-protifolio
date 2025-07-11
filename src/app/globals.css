@@ -75,12 +75,21 @@
 
 @layer components {
   .glitch {
-    @apply relative text-foreground uppercase tracking-[5px];
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(var(--foreground));
   }
   .glitch::before,
   .glitch::after {
     content: attr(data-glitch);
-    @apply block absolute top-0 left-0 w-full h-full opacity-80;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
   }
   .glitch::before {
     color: #0ff; /* cyan */
@@ -91,12 +100,17 @@
     z-index: -2;
   }
 
-  .glitch.animate-glitch-hover:hover::before,
-  .glitch.animate-glitch-auto::before {
+  .animate-glitch-auto::before {
     animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
   }
-  .glitch.animate-glitch-hover:hover::after,
-  .glitch.animate-glitch-auto::after {
+  .animate-glitch-auto::after {
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  }
+
+  .animate-glitch-hover:hover::before {
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  }
+  .animate-glitch-hover:hover::after {
     animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
   }
 }
