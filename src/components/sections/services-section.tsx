@@ -3,17 +3,17 @@ import { CodeXml, ServerCog, Rocket } from 'lucide-react';
 
 const services = [
   {
-    icon: <CodeXml className="h-10 w-10 text-secondary group-hover:text-[#F97316] transition-colors duration-300" />,
+    icon: <CodeXml className="h-10 w-10 text-[#F97316] group-hover:text-secondary transition-colors duration-300" />,
     title: 'Front-End Development',
     description: 'Creating beautiful, responsive, and intuitive user interfaces with modern technologies like React and Next.js.'
   },
   {
-    icon: <ServerCog className="h-10 w-10 text-secondary group-hover:text-[#F97316] transition-colors duration-300" />,
+    icon: <ServerCog className="h-10 w-10 text-[#F97316] group-hover:text-secondary transition-colors duration-300" />,
     title: 'Full-Stack Solutions',
     description: 'Building robust and scalable full-stack applications, from database design to API development and deployment.'
   },
   {
-    icon: <Rocket className="h-10 w-10 text-secondary group-hover:text-[#F97316] transition-colors duration-300" />,
+    icon: <Rocket className="h-10 w-10 text-[#F97316] group-hover:text-secondary transition-colors duration-300" />,
     title: 'Website Optimization',
     description: 'Improving website performance, speed, and SEO to enhance user experience and drive more traffic.'
   }
@@ -21,7 +21,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="bg-card border-y">
+    <section id="services" className="bg-background border-y">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Services I Offer</h2>
@@ -33,13 +33,13 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="group text-center p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-all duration-300 bg-[#F97316] text-secondary hover:bg-card hover:text-card-foreground"
+              className="group text-center p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-all duration-300 bg-card text-card-foreground hover:bg-[#F97316] hover:text-secondary"
             >
               <CardHeader className="items-center">
                 {service.icon}
                 <CardTitle className="mt-4 font-headline text-2xl">{service.title}</CardTitle>
               </CardHeader>
-              <CardDescription className="text-base text-secondary/90 group-hover:text-muted-foreground transition-colors duration-300">
+              <CardDescription className="text-base text-muted-foreground group-hover:text-secondary/90 transition-colors duration-300">
                 {service.description}
               </CardDescription>
             </Card>
