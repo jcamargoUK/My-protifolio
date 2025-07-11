@@ -73,6 +73,12 @@
   }
 }
 
+@layer utilities {
+  .hover-orange-bg:hover {
+    @apply bg-orange-accent text-primary-foreground border-orange-accent;
+  }
+}
+
 /* BB8 Toggle */
 .bb8-toggle {
   --toggle-size: 7px; /* control overall size */

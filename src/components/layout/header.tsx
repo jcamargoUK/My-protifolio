@@ -32,7 +32,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-foreground/60 transition-colors hover:text-primary"
+              className="text-foreground/60 transition-all duration-300 hover:text-orange-accent hover:scale-105"
               prefetch={false}
             >
               {link.label}
@@ -40,7 +40,7 @@ export default function Header() {
           ))}
            <div className="flex items-center gap-2">
              <Link href="/summarizer" passHref>
-                <Button variant="outline" size="sm">AI Summarizer</Button>
+                <Button variant="outline" size="sm" className="hover-orange-bg transition-all duration-300 hover:scale-105">AI Summarizer</Button>
              </Link>
              <ThemeToggle />
            </div>
@@ -63,7 +63,7 @@ export default function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-lg font-medium transition-colors hover:text-primary"
+                    className="text-lg font-medium transition-all duration-300 hover:text-orange-accent hover:scale-105"
                     prefetch={false}
                     onClick={closeSheet}
                   >
@@ -73,7 +73,7 @@ export default function Header() {
               </nav>
               <div className="flex items-center justify-between">
                 <Link href="/summarizer" passHref>
-                   <Button variant="outline" onClick={closeSheet}>AI Summarizer</Button>
+                   <Button variant="outline" onClick={closeSheet} className="hover-orange-bg">AI Summarizer</Button>
                 </Link>
                 <ThemeToggle />
               </div>

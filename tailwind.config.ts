@@ -22,6 +22,7 @@ export default {
         code: ['monospace'],
       },
       colors: {
+        'orange-accent': '#de7d2f',
         background: 'hsl(var(--background))',
         'background-alt': 'hsl(var(--background-alt))',
         foreground: 'hsl(var(--foreground))',

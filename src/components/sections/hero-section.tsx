@@ -20,7 +20,7 @@ export default function HeroSection() {
             <Link href="/#contact">
               <Button
                 size="lg"
-                className="transition-transform duration-200 hover:scale-105"
+                className="transition-transform duration-300 hover:scale-105"
               >
                 Hire Me
               </Button>
@@ -29,7 +29,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="transition-all duration-200 hover:scale-105"
+                className="hover-orange-bg transition-all duration-300 hover:scale-105"
               >
                 View My Work
                 <ArrowDown className="ml-2 h-5 w-5" />
