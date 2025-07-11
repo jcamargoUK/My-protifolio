@@ -26,7 +26,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="transition-transform duration-200 hover:scale-105"
+                className="transition-transform duration-200 hover:scale-105 border-orange-500 bg-orange-500 text-white hover:bg-orange-600 hover:border-orange-600"
               >
                 View My Work
                 <ArrowDown className="ml-2 h-5 w-5" />
