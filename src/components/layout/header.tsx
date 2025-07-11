@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Code } from 'lucide-react';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const navLinks = [
   { href: '/#about', label: 'About' },
@@ -31,15 +32,18 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-foreground/60 transition-all duration-200 hover:text-[#F97316] hover:scale-105"
+              className="text-foreground/60 transition-colors hover:text-primary"
               prefetch={false}
             >
               {link.label}
             </Link>
           ))}
-          <Link href="/summarizer" passHref>
-             <Button variant="outline" size="sm">AI Summarizer</Button>
-          </Link>
+           <div className="flex items-center gap-2">
+             <Link href="/summarizer" passHref>
+                <Button variant="outline" size="sm">AI Summarizer</Button>
+             </Link>
+             <ThemeToggle />
+           </div>
         </nav>
         <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
           <SheetTrigger asChild>
@@ -59,7 +63,7 @@ export default function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-lg font-medium transition-all duration-200 hover:text-[#F97316] hover:scale-105"
+                    className="text-lg font-medium transition-colors hover:text-primary"
                     prefetch={false}
                     onClick={closeSheet}
                   >
@@ -67,9 +71,12 @@ export default function Header() {
                   </Link>
                 ))}
               </nav>
-              <Link href="/summarizer" passHref>
-                 <Button variant="outline" onClick={closeSheet}>AI Summarizer</Button>
-              </Link>
+              <div className="flex items-center justify-between">
+                <Link href="/summarizer" passHref>
+                   <Button variant="outline" onClick={closeSheet}>AI Summarizer</Button>
+                </Link>
+                <ThemeToggle />
+              </div>
             </div>
           </SheetContent>
         </Sheet>
