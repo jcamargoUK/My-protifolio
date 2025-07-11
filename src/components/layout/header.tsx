@@ -31,7 +31,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
+              className="text-foreground/60 transition-all duration-200 hover:text-[#F97316] hover:scale-105"
               prefetch={false}
             >
               {link.label}
@@ -59,7 +59,7 @@ export default function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-lg font-medium transition-colors hover:text-primary"
+                    className="text-lg font-medium transition-all duration-200 hover:text-[#F97316] hover:scale-105"
                     prefetch={false}
                     onClick={closeSheet}
                   >
