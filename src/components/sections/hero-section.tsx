@@ -8,8 +8,8 @@ import { ArrowDown } from 'lucide-react';
 export default function HeroSection() {
   return (
     <section id="home" className="border-b bg-gradient-to-b from-background via-background-alt to-background">
-      <div className="container mx-auto px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
-        <div className="max-w-3xl">
+      <div className="container mx-auto px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-[calc(70vh-4rem)]">
+        <div className="max-w-3xl py-8">
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-4 text-foreground">
             Transforming Ideas into Digital Realities
           </h1>
